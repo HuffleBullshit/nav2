@@ -1,0 +1,72 @@
+#downnav {
+  display: none;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 1080px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  #downnav {
+    /* 毛玻璃效果 */
+    backdrop-filter: blur(30px);
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(172, 172, 172, 0.9);
+    border-radius: 2em 2em 2em 2em;
+    font-size: 2vh;
+    z-index: 99;
+  }
+
+  #downnav .downnav-con {
+    list-style: none;
+    width: 95%;
+    display: flex;
+  }
+
+  #downnav .downnav-con li {
+    text-align: center;
+    float: left;
+    width: 25%;
+  }
+
+  #downnav .downnav-con li a {
+    color: rgb(48, 48, 48);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+  }
+
+  .center {
+    background-color: rgb(146, 146, 147) !important;
+    width: 20vw !important;
+    height: 20vw !important;
+    -moz-border-radius: 10vw;
+    -webkit-border-radius: 10vw;
+    border-radius: 10vw;
+  }
+
+  #downnav .downnav-con li a img {
+    width: 4vh;
+    padding-top: 2.2vh;
+  }
+
+  #downnav .downnav-con li a p {
+    position: relative;
+    top: -1vh;
+  }
+}
