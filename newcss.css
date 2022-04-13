@@ -7,16 +7,12 @@
   margin: 0px;
 }
 
-@media only screen and (max-width: 1080px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
+@media only screen and (max-width: 750px) {
   #downnav {
     /* 毛玻璃效果 */
     backdrop-filter: blur(30px);
     width: 100vw;
-    height: 8vh;
+    height: 15vw;
     position: fixed;
     display: block;
     bottom: 0;
@@ -40,7 +36,8 @@
   #downnav .downnav-con li {
     text-align: center;
     float: left;
-    width: 25%;
+    width: 20%;
+    height: 15vw;
   }
 
   #downnav .downnav-con li a {
@@ -49,6 +46,7 @@
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
+    height: 8vw;
   }
 
   .center {
@@ -58,15 +56,26 @@
     -moz-border-radius: 10vw;
     -webkit-border-radius: 10vw;
     border-radius: 10vw;
+    position: relative;
+    top: -2vw;
+  }
+
+  .down1 {
+    position: relative;
+    top: 2.2vw;
+  }
+
+  .down2 {
+    top: 0vw !important;
   }
 
   #downnav .downnav-con li a img {
-    width: 4vh;
-    padding-top: 2.2vh;
+    width: 7vw;
+    margin-top: 1.5vw;
   }
 
   #downnav .downnav-con li a p {
     position: relative;
-    top: -1vh;
+    top: -2vw;
   }
 }
