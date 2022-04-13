@@ -7,7 +7,7 @@
   margin: 0px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1080px) {
   #downnav {
     /* 毛玻璃效果 */
     backdrop-filter: blur(30px);
